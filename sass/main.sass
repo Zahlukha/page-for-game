@@ -1,0 +1,313 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+body 
+  padding-top: 50px
+
+.starter-template 
+  padding: 40px 15px
+  text-align: center
+
+/* Button Up */
+
+#back-top	
+	z-index: 99
+	position: fixed
+	bottom: 30px
+	right: 1%
+	a
+		width: 64px
+		display: block
+		text-align: center
+		font: 11px/100% 'Artifika', serif
+		text-transform: uppercase
+		text-decoration: none
+		color: #bbb
+		-webkit-transition: 1s
+		-moz-transition: 1s
+		transition: 1s
+		&:hover
+			color: $accent
+
+#back-top 
+	span
+		width: 64px
+		height: 64px
+		display: block
+		margin-bottom: 7px
+		background: url('../img/arrow.png') #272822 no-repeat center center
+		-webkit-border-radius: 15px
+		-moz-border-radius: 15px
+		border-radius: 15px
+		-webkit-transition: 1s
+		-moz-transition: 1s
+		transition: 1s
+		a
+			&:hover 
+				span
+					background-color: #777
+
+/* end button Top */
+
+/* Block header */
+
+.title-menu
+	font-family: 'Artifika', serif
+	color: $accent
+
+header
+	height: 100%
+	background: $darkness
+	display: block
+	-webkit-box-shadow: 0 0 0 600px rgba(0, 0, 0, 0.7) inset
+	-moz-box-shadow: 0 0 0 600px rgba(0, 0, 0, 0.7) inset
+	-o-box-shadow: 0 0 0 600px rgba(0, 0, 0, 0.7) inset
+	box-shadow: 0 0 0 600px rgba(0, 0, 0, 0.7) inset
+
+p, h1 
+	font-family: 'Artifika', serif
+
+p
+	font-size: 18px
+
+#bg
+	height: 100%
+	width: auto
+	position: relative
+	background-position: center
+	background-size: cover
+	text-align: center
+
+.main-title
+	padding-top: 150px
+	color: $text-accent
+	font-size: 30px
+	text-transform: uppercase
+	font-family: 'Artifika', serif
+
+.img
+	margin-top: -45px
+	height: 200px
+	width: auto
+
+.title-logo
+	position: relative
+	top: -45px
+	color: $text-accent
+
+.download-game
+	button
+		margin-top: -50px
+		border: none
+		border-radius: 5px
+		background: $accent
+		color: $text-accent
+		text-align: center
+		text-decoration: none
+		display: inline-block
+		cursor: pointer
+		padding: 15px 32px;
+		&:hover
+			background: $accent-dark
+
+/* end block header */
+
+/* Block home */
+
+.home
+	padding-bottom: 50px;
+	width: 100%
+	background: $dark
+	display: block
+	.choise
+		padding-top: 25px
+		text-align: center
+		text-transform: uppercase
+		color: $text-accent
+		font-size: 24px
+		font-family: 'Artifika', serif
+
+.make-choise
+	display: block
+	border: solid $text-accent 1px
+  margin: 0 auto
+  height: 
+	&:hover
+		border: solid #D92539 1px
+
+.your-choice
+	z-index: 10
+	font-family: 'Artifika', serif
+	text-align: center
+	color: $text-accent
+	font-size: 24px
+
+/* end block home */
+
+/* Block about */
+
+.about
+	background: $darkness
+	display: block
+	padding-top: 15px
+	h1
+		font-family: 'Artifika', serif
+		text-transform: uppercase
+		color: $accent
+		text-align: center
+	p
+		font-family: 'Artifika', serif
+		text-align: center
+		color: $text-accent
+	.knight-about
+		margin-top: -55px
+		background-image: url('../img/knights/knights-about.png')
+		background-repeat: no-repeat
+		background-position: center 
+		height: 250px
+		width: auto
+	.swords-about
+		margin-top: -25px
+		background-image: url('../img/knights/swords-about.png')
+		background-repeat: no-repeat
+		background-position: center 
+		height: 180px
+		width: auto
+
+
+/* end block about */
+
+/* block battle */
+
+.battle
+	padding-bottom: 30px;
+	background: $dark
+	display: block
+	.content
+		text-align: center
+		img
+			height: 240px
+			width: auto
+			border-radius: 8px
+		h1
+			font-family: 'Artifika', serif
+			text-transform: uppercase
+			color: $text-accent
+		p
+			font-family: 'Artifika', serif
+			color: $text-accent
+			a
+				font-family: 'Artifika', serif
+				text-decoration: none !important
+				color: $accent
+
+/* end block battle */
+
+/* Block footer */
+
+footer
+	padding-top: 10px
+	display: block
+	background: $darkness
+	text-align: center
+	p
+		margin: 0
+	.knight
+		background-image: url('../img/knights/knights-footer.png')
+		background-repeat: no-repeat
+		background-position: center 
+		height: 320px
+		width: auto
+	a
+		color: $accent
+		text-decoration: none !important
+
+/* end block footer */
+
+@media screen and (max-width: 1365px) 
+
+	.img
+		height: 150px
+		width: auto
+
+@media screen and (max-width: 1195px) 
+
+	.img
+		height: 100px
+		width: auto
+	
+	.battle
+		.content
+			img
+				height: 200px
+
+@media screen and (max-width: 993px) 
+
+	.img
+		height: 100px
+		width: auto
+
+@media screen and (max-width: 766px) 
+
+	.img
+		height: 100px
+		width: auto
+
+	.battle
+		.content
+			img
+				height: 160px
+
+@media screen and (max-width: 490px) 
+
+	.img
+		height: 100px
+		width: auto
+
+	.battle
+		.content
+			img
+				height: 130px
+
+@import "media" // Всегда в конце
